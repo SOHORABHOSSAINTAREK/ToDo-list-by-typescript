@@ -48,3 +48,14 @@ li {
     color: whitesmoke;
     font-weight: bold;
 }
+
+.remove-btn {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+
+}

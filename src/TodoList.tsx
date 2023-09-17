@@ -20,6 +20,10 @@ const TodoList: React.FC = () => {
             })
         )
     };
+    const handleRemove = (id: number) => {
+        setTodos(todos.filter((todo) => todo.id !== id));
+    };
+
     const handleClick = () => {
         const newTodo: item = { id: Date.now(), text: input, completed: false }
         setTodos([...todos, newTodo]);
@@ -34,6 +38,7 @@ const TodoList: React.FC = () => {
                         <li key={todo.id} style={{ textDecoration: todo.completed ? "line-through" : "none", color: todo.completed ? "green" : "red" }}>
                             {todo.text}
                             <button className='complete-btn' onClick={() => handleToggle(todo.id)}>Completed</button>
+                            <button className='remove-btn' onClick={() => handleRemove(todo.id)}>Remove</button>
                         </li>
                     ))
 
