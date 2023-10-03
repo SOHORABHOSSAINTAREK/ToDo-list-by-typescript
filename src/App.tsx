@@ -1,5 +1,6 @@
 
 import './App.css'
+import GraphQl from './GraphQl'
 import TodoList from './TodoList'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
 
       <TodoList />
+      <GraphQl></GraphQl>
 
     </>
   )
